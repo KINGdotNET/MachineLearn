@@ -1,4 +1,6 @@
 # 20240120 ML code - testing by EM@KING.NET
+# Code tested.
+
 import os
 import nltk
 import ssl
@@ -11,7 +13,7 @@ ssl._create_default_https_context = ssl._create_unverified_context
 nltk.data.path.append(os.path.abspath("nltk_data"))
 nltk.download('punkt')
 
-
+# Your chatbot will response based on these information. You can update it or use open source LLM to expand his ability.
 intents = [
     {
       "tag": "greeting",
@@ -84,8 +86,9 @@ def chatbot(input_text):
       response = random.choice(intent['responses'])
       return response
 
-# from heree we have created the chatbot.
+# from here we have created the chatbot.
 
+# Deploy and enjoy your personalized chatbot.
 counter = 0
 
 def main():
