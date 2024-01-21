@@ -1,5 +1,4 @@
 # 20240120 ML code - testing by EM@KING.NET
-
 import os
 import nltk
 import ssl
@@ -78,7 +77,7 @@ clf.fit(x, y)
 
 # write a Python function to chat with the chatbot:
 def chatbot(input_text):
-  input_text = vectorized.transform([input_text])
+  input_text = vectorizer.transform([input_text])
   tag = clf.predict(input_text)[0]
   for intent in intents:
     if intent['tag'] == tag:
